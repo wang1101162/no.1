@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monster Survivors - Epic Survival Adventure Game | Play Online</title>
     <meta name="description" content="Play Monster Survivors online - An epic survival adventure game where you battle hordes of monsters. Experience intense action and strategic gameplay in this thrilling monster-fighting adventure.">
-    <link rel="canonical" href="https://survvvv.online" />
+    <link rel="canonical" href="https://survvvv.online/" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W02JTY01FW"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-W02JTY01FW');
+        gtag('config', 'G-W02JTY01FW', {
+            'send_page_view': true,
+            'anonymize_ip': true,
+            'cookie_domain': 'survvvv.online'
+        });
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .aspect-w-16 {
+            position: relative;
+            padding-bottom: 56.25%;
+        }
+        .aspect-w-16 iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -32,12 +49,8 @@
 
     <main class="max-w-4xl mx-auto px-4 md:px-8 py-8">
         <section class="mb-12">
-            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
-                <iframe 
-                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
-                    class="w-full h-[600px] border-0"
-                    allowfullscreen>
-                </iframe>
+            <div class="aspect-w-16">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -77,4 +90,4 @@
         </div>
     </footer>
 </body>
-</html> 
+</html>
